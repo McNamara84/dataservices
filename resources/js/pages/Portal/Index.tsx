@@ -25,7 +25,7 @@ export default function PortalIndex({ title }: PortalIndexProps) {
 
     const handleSearch = (e: React.FormEvent) => {
         e.preventDefault();
-        // Hier würde die Suchlogik implementiert werden
+        // This is where the search logic would be implemented
         console.log('Searching for:', searchQuery);
     };
 
@@ -51,7 +51,7 @@ export default function PortalIndex({ title }: PortalIndexProps) {
         });
     };
 
-    // Beispiel-Daten für Tags (später durch echte Daten ersetzen)
+    // Example data for tags (replace with real data later)
     const datacenters = ['GFZ German Research Centre', 'PANGAEA', 'Other Centers'];
     const categories = ['Geophysics', 'Seismology', 'Climate', 'Geology'];
     const resourceTypes = ['Dataset', 'Collection', 'Software', 'Model'];
@@ -274,7 +274,7 @@ export default function PortalIndex({ title }: PortalIndexProps) {
                                     </div>
                                 </div>
                                 <div className="min-h-[400px]">
-                                    <p className="text-gray-600">Suchergebnisse werden hier angezeigt...</p>
+                                    <p className="text-gray-600">Search results will be displayed here...</p>
                                     {/* Search results would be rendered here */}
                                 </div>
                             </div>
@@ -283,7 +283,7 @@ export default function PortalIndex({ title }: PortalIndexProps) {
                             {showMap && (
                                 <div className="rounded bg-gray-100 p-5 lg:w-[620px]">
                                     <div className="flex h-[330px] w-full items-center justify-center rounded bg-gray-200">
-                                        <p className="text-gray-600">Karte wird hier angezeigt</p>
+                                        <p className="text-gray-600">Map will be displayed here</p>
                                         {/* Leaflet map would be rendered here */}
                                     </div>
                                 </div>

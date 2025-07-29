@@ -97,7 +97,7 @@
 
             <div class="flex items-center gap-8">
                 <a href="http://www.helmholtz.de/" target="_blank" rel="noopener noreferrer">
-                    <img src="/images/portal/logo_helmholtz_gemeinschaft_de.gif" alt="Logo der Helmholtz-Gemeinschaft" class="h-[70px]" />
+                    <img src="/images/portal/logo_helmholtz_gemeinschaft_de.gif" alt="Logo of the Helmholtz Association" class="h-[70px]" />
                 </a>
                 <a href="http://www.gfz.de/en/">
                     <img src="/images/portal/GFZ_Wortmarke_SVG_min2_en.svg" alt="Logo GFZ Potsdam" class="h-11" />

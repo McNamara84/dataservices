@@ -9,7 +9,7 @@ class PortalController extends Controller
 {
     public function index()
     {
-        return Inertia::render('Portal/Index', [
+        return Inertia::render('portal/index', [
             'title' => 'GFZ Data Services - Metadata Portal',
         ]);
     }
