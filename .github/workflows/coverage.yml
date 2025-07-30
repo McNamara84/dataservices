@@ -142,18 +142,23 @@ jobs:
     - name: Update coverage badge in Gist
       if: github.ref == 'refs/heads/main'
       run: |
-        # Update coverage badge in GitHub Gist
+        # Create JSON payload for Gist update
+        cat > gist-payload.json << EOF
+        {
+          "files": {
+            "coverage-badge.json": {
+              "content": "{\n  \"schemaVersion\": 1,\n  \"label\": \"coverage\",\n  \"message\": \"${{ env.COVERAGE_PERCENTAGE }}%\",\n  \"color\": \"${{ env.BADGE_COLOR }}\"\n}"
+            }
+          }
+        }
+        EOF
+        
         curl -X PATCH \
           -H "Authorization: token ${{ secrets.GIST_TOKEN }}" \
           -H "Accept: application/vnd.github.v3+json" \
+          -H "Content-Type: application/json" \
           https://api.github.com/gists/${{ secrets.GIST_ID }} \
-          -d '{
-            "files": {
-              "coverage-badge.json": {
-                "content": "{\n  \"schemaVersion\": 1,\n  \"label\": \"coverage\",\n  \"message\": \"'${{ env.COVERAGE_PERCENTAGE }}%\",\n  \"color\": \"'${{ env.BADGE_COLOR }}'\"\n}"
-              }
-            }
-          }'
+          -d @gist-payload.json
 
     - name: Upload coverage HTML report
       uses: actions/upload-artifact@v4
