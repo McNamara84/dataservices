@@ -7,4 +7,4 @@
 [![TypeScript](https://img.shields.io/badge/TypeScript-5.7-3178C6?style=flat&logo=typescript&logoColor=white)](https://typescriptlang.org)
 [![TailwindCSS](https://img.shields.io/badge/TailwindCSS-4.1-06B6D4?style=flat&logo=tailwindcss&logoColor=white)](https://tailwindcss.com)
 [![Pest](https://img.shields.io/badge/Pest-3.8-FF6D33?style=flat&logo=pest&logoColor=white)](https://pestphp.com)
-[![Code Coverage](https://img.shields.io/endpoint?url=https://gist.githubusercontent.com/McNamara84/YOUR_GIST_ID/raw/coverage-badge.json)](https://github.com/McNamara84/dataservices/actions)
+[![Code Coverage](https://img.shields.io/endpoint?url=https://gist.githubusercontent.com/McNamara84/9f9dccdcc89d9259ecf998500d546278/raw/coverage-badge.json)](https://github.com/McNamara84/dataservices/actions)
