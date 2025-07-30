@@ -77,9 +77,9 @@
                 </div>
             </nav>
 
-            <div class="bg-[#e9e9e9] text-gray-800">
+            <div class="bg-[#e9e9e9] text-gray-800 relative overflow-hidden">
                 <div class="max-w-6xl mx-auto px-5 py-6 pl-24 relative">
-                    <img src="/images/portal/banner.png" class="absolute h-full top-0 -left-4" />
+                    <img src="/images/portal/banner.png" class="absolute h-full top-0 left-0 -translate-x-full" />
                     <span class="text-lg">
                         This is the data portal. More information on the
                         <a href="/web" class="text-[#00589c] hover:text-orange-500">GFZ Data Services homepage</a>.
