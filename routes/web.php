@@ -2,10 +2,9 @@
 
 use Illuminate\Support\Facades\Route;
 use Inertia\Inertia;
+use App\Http\Controllers\PortalController;
 
-Route::get('/', function () {
-    return Inertia::render('welcome');
-})->name('home');
+Route::get('/portal', [PortalController::class, 'index'])->name('portal.index');
 
 Route::middleware(['auth', 'verified'])->group(function () {
     Route::get('dashboard', function () {
