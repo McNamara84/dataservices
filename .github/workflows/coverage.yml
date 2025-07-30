@@ -57,13 +57,12 @@ jobs:
     - name: Build assets
       run: npm run build
 
-    - name: Copy environment file
-      run: cp .env.example .env
+    - name: Setup environment file
+      run: |
+        cp .env.ci .env
+        php artisan key:generate
 
-    - name: Generate application key
-      run: php artisan key:generate
-
-    - name: Configure database
+    - name: Clear application cache
       run: |
         php artisan config:clear
         php artisan cache:clear
